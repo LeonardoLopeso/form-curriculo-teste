@@ -46,8 +46,8 @@ class HomeController
 					$curriculoName = $this->uploadFile($curriculo);
 					if(HomeModel::insert($nome,$email,$fone,$cargo,$escolaridade,$verificaObs,$curriculoName,$ip,$data)){
 						
-						$emailDest = 'paulloholiveira77@gmail.com';
-						$nomeDest = 'Primo Dev';
+						$emailDest = 'meuemail@email.com';
+						$nomeDest = 'Nome do destinatário';
 						$assunto = 'Teste envio de curriculo';
 						$conteudo = '<h3>Email enviado pelo formúlario de cadastro de currículo</h3><br>'.
 									'<p>Enviado por: '.$nome.
